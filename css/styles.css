@@ -1,0 +1,219 @@
+:root {
+    --color-NavyBlue: #2E2F42;
+    --color-Iris: #4D5AE5;
+    --color-Slate: #434455;
+    --color-Main-Background: #FFFFFF;
+    --color-Cornflower: #E7E9FC;
+    --color-hero-button-shadow: rgba(0, 0, 0, 0.15);
+    --color-Ocean: #404BBF;
+    --color-Cloud: #F4F4FD;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    background-color: var(--color-Main-Background);
+    color: var(--color-Slate);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.header {
+    border-bottom: 1px solid var(--color-Cornflower);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-Iris)
+}
+
+.logo .studio {
+    color: var(--color-NavyBlue);
+}
+
+.nav .studio {
+    font-weight: 500;
+    color: var(--color-NavyBlue);
+    letter-spacing: 0.02em;
+}
+
+.nav .portfolio {
+    font-weight: 500;
+    color: var(--color-NavyBlue);
+    letter-spacing: 0.02em;
+}
+
+.nav .contacts {
+    font-weight: 500;
+    color: var(--color-NavyBlue);
+    letter-spacing: 0.02em;
+}
+
+.address .mailto {
+    color: var(--color-Slate);
+}
+
+.address .tel {
+    color: var(--color-Slate);
+}
+
+.hero {
+    background-color: var(--color-NavyBlue);
+}
+
+.hero-title {
+    font-size: 56px;
+    text-align: center;
+    color: var(--color-Main-Background);
+}
+
+.hero .button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    background: var(--color-Iris);
+    box-shadow: 0px 4px 4px var(--color-hero-button-shadow);
+    border-radius: 4px;
+    color: var(--color-Main-Background);
+
+}
+
+.section-1 .strategy {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.section-1 .punctuality {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.section-1 .diligence {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.section-1 .technologies {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.section-1 .text {
+    line-height: 1.5;
+}
+
+.section-2-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-NavyBlue);
+}
+
+.section-3 {
+    background-color: var(--color-Cloud);
+}
+
+.section-3-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-NavyBlue);
+}
+
+.section-3 .team-member-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.section-3 .team-member-description {
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: var(--color-NavyBlue);
+}
+
+.footer .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-Iris)
+}
+
+.footer .studio {
+
+    color: var(--color-Cloud);
+}
+
+.footer .text {
+    line-height: 1.5;
+    color: var(--color-Cornflower);
+}
+
+/** portfolio */
+
+.section-1-portf .button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-Iris);
+    background-color: var(--color-Cloud);
+    border: 1px solid var(--color-Cornflower);
+}
+
+.section-2-portf .photo-desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-NavyBlue);
+}
+
+.verity {
+    line-height: 1.5;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: var(--color-Ocean);
+    color: var(--color-Main-Background);
+}
+
+.button:active {
+    background: var(--color-Ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--color-Ocean);
+}
