@@ -17,6 +17,34 @@ body {
     color: var(--color-Slate);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
 .link {
     text-decoration: none;
 }
@@ -27,6 +55,27 @@ body {
 
 .header {
     border-bottom: 1px solid var(--color-Cornflower);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header-link {
+    padding: 24px;
+    display: block;
 }
 
 .logo {
@@ -41,40 +90,48 @@ body {
 
 .logo .studio {
     color: var(--color-NavyBlue);
+    padding-right: 76px;
 }
 
-.nav .studio {
+.nav .header-link {
     font-weight: 500;
     color: var(--color-NavyBlue);
     letter-spacing: 0.02em;
 }
 
-.nav .portfolio {
-    font-weight: 500;
-    color: var(--color-NavyBlue);
-    letter-spacing: 0.02em;
-}
-
-.nav .contacts {
-    font-weight: 500;
-    color: var(--color-NavyBlue);
-    letter-spacing: 0.02em;
-}
-
-.address .mailto {
+.address .address-link {
     color: var(--color-Slate);
 }
 
-.address .tel {
-    color: var(--color-Slate);
+.address-list {
+    display: flex;
+    gap: 20px;
+}
+
+.address-link {
+    display: block;
+    padding: 24px;
+}
+
+.main-section:not(:last-child) {
+    padding-bottom: 120px;
 }
 
 .hero {
     background-color: var(--color-NavyBlue);
 }
 
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 188px 0;
+}
+
 .hero-title {
     font-size: 56px;
+    width: 494px;
     text-align: center;
     color: var(--color-Main-Background);
 }
@@ -83,12 +140,19 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
+    padding: 16px 32px;
     letter-spacing: 0.04em;
     background: var(--color-Iris);
     box-shadow: 0px 4px 4px var(--color-hero-button-shadow);
     border-radius: 4px;
     color: var(--color-Main-Background);
 
+}
+
+.section-1-list {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% /72px) - 4);
 }
 
 .section-1 .strategy {
@@ -123,12 +187,35 @@ body {
     line-height: 1.5;
 }
 
+.section-2-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2-list {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% /48px) - 3);
+}
+
 .section-2-title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
     color: var(--color-NavyBlue);
+}
+
+.section-3-container {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+}
+
+.section-3-list {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc((100% /72px) - 4);
 }
 
 .section-3 {
@@ -156,6 +243,11 @@ body {
 
 .footer {
     background-color: var(--color-NavyBlue);
+    padding: 100px 0;
+}
+
+.footer-container {
+    width: 264px;
 }
 
 .footer .logo {
@@ -165,12 +257,17 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-Iris)
+    color: var(--color-Iris);
+
 }
 
 .footer .studio {
 
     color: var(--color-Cloud);
+}
+
+.footer-logo {
+    margin-bottom: 16px;
 }
 
 .footer .text {
@@ -179,8 +276,11 @@ body {
 }
 
 /** portfolio */
+.section {
+    padding-bottom: 72px;
+}
 
-.section-1-portf .button {
+.filters .button {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
@@ -188,13 +288,45 @@ body {
     color: var(--color-Iris);
     background-color: var(--color-Cloud);
     border: 1px solid var(--color-Cornflower);
+    padding: 12px 24px;
+    border-radius: 4px;
 }
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+}
+
+.filters-list {
+    display: flex;
+    gap: 24px;
+}
+
 
 .section-2-portf .photo-desc {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--color-NavyBlue);
+}
+
+.text-border {
+    border: 1px solid var(--color-Cornflower);
+}
+
+.section-2-portf-main-list-item:not(:last-child) {
+    padding-bottom: 48px;
+}
+
+.section-2-portf-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.section-2-portf-list-item {
+    flex-basis: calc((100% /48px) - 3);
 }
 
 .verity {
